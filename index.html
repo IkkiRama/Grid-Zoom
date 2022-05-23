@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Zoom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        #toggle:checked ~ label div.toggle-circle{
+            @apply translate-x-6;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        }
+    </script>
+</head>
+
+<body>
+
+    <div
+        class="p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 md:gap-4 dark:bg-slate-900 transition-colors duration-500 ">
+        <h2 class="h-15 text-xl font-semibold text-slate-800 md:col-start-4 md:row-start-2 md:flex md:justify-center
+            md:items-center md:text-center dark:text-slate-200 ">
+            <span>
+                Welcome to <a href="https://github.com/IkkiRama/"
+                    class="hover:text-sky-500 dark:hover:text-sky-500">Rifki
+                    Romadhan</a> website
+            </span>
+        </h2>
+
+        <div
+            class="h-15  font-bold text-slate-700 md:col-start-2 md:row-start-2 md:flex md:justify-center md:items-center md:flex-col ">
+
+            <a href="https://www.instagram.com/george_ikki/"
+                class="text-lg hover:text-sky-500 dark:hover:text-sky-500 dark:text-slate-200">@george_ikki</a>
+
+            <div class="flex mt-5">
+                <span class="text-sm text-slate-500 mr-2 dark:text-slate-200 ">Light</span>
+
+                <input type="checkbox" id="toggle" class="hidden">
+                <label for="toggle">
+                    <div class="w-12 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer p-1">
+                        <div class="w-4 h-4  transition-all duration-300 bg-white rounded-full toggle-circle"></div>
+                    </div>
+                </label>
+
+                <span class="text-sm text-slate-500 ml-2 dark:text-slate-200 ">Dark</span>
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/1.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700  md:col-start-3 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/2.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/3.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/4.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/5.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700  md:col-start-2 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/6.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700  md:col-start-4 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/7.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/8.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700  md:col-start-3 ">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/9.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+        <div
+            class="h-15 aspect-[4/3] rounded-lg md:aspect-[3/4] overflow-hidden group xl:aspect-[4/3] hover:scale-95 cursor-pointer transition-all duration-700  md:col-start-3">
+            <div
+                class="w-full h-full bg-cover object-cover object-center bg-[url('img/10.jpg')] group-hover:scale-150 rounded-lg group-hover:rotate-12 transition-all duration-700 ">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let checkbox = document.querySelector("#toggle")
+        let html = document.querySelector("html")
+
+        checkbox.addEventListener("click", () => {
+            checkbox.checked ? html.classList.add("dark") : html.classList.remove("dark")
+        })
+    </script>
+
+</body>
+
+</html>
